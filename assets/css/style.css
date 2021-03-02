@@ -13,6 +13,7 @@ body {
 a,
 a:hover {
     text-decoration: none;
+    transition: linear .2s;
 }
 
 h1,
@@ -33,17 +34,21 @@ nav {
     font-family: 'Playfair Display', serif;
 }
 
+button,
+button:hover,
+button:focus {
+    outline: none;
+}
 
-.top-bar {}
+.navbar-toggler {
+    border: 1px solid #1B2437;
+    display: none;
+}
 
 .site-logo {
     width: 150px;
     margin: 10px 0;
 }
-
-.site-logo img {}
-
-.header-icons {}
 
 .header-icons ul {
     margin: 0;
@@ -64,14 +69,13 @@ nav {
 
 }
 
-.action-menu {}
-
 .action-menu ul {
 
     margin: 0;
     list-style: none;
     text-align: right;
 
+    padding: 0;
 }
 
 .action-menu ul li {
@@ -95,9 +99,23 @@ nav {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
+    position: relative;
 }
 
-.nav-link.active {}
+.nav-link.active {
+    padding-bottom: 30px;
+}
+
+.nav-link.active::after {
+    content: '';
+    height: 20px;
+    width: 2.4px;
+    background-color: #1B2437;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
 
 
 .home-banner {
@@ -108,13 +126,12 @@ nav {
     padding: 150px 0;
 }
 
-.banner-content {}
-
 .banner-content h1 {
     color: #FFFFFF;
     font-size: 48px;
     font-weight: 400;
     line-height: 64px;
+    margin-bottom: 18px;
 }
 
 .banner-content p {
@@ -122,21 +139,23 @@ nav {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: muli, sans-serif;
 }
-
-.banner-content a {}
 
 .btn-theme {
     background-color: transparent;
     border-radius: 16px;
     border: 2px solid #ffffff33;
     color: #fff;
-    padding: 13px 20px;
+    padding: 15px 30px;
     line-height: 1;
     font-weight: 600;
     font-size: 16px;
     display: inline-block;
     transition: linear .2s;
+    font-family: muli, sans-serif;
 }
 
 .btn-theme:hover {
@@ -147,33 +166,24 @@ nav {
     transition: linear .2s;
 }
 
-.banner-img {}
-
-.banner-img img {}
-
-.popular-category {}
-
-.popular-category h2 {}
-
-.popular-category p {}
-
-.popular-category h5 {}
+.popular-category img {
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 16px;
+}
 
 .category-slider {
-    margin: 40px 0;
+    margin-top: 10px;
     background: #fff;
     border-radius: 16px;
     padding: 30px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .category-item {
     text-align: center;
 }
-
-.category-item a {}
-
-.category-item img {}
 
 .category-item h2 {
     color: #1B2437;
@@ -184,15 +194,11 @@ nav {
     margin-bottom: 40px;
 }
 
-.item {}
-
 .product-card {
     background-color: #fff;
     border-radius: 16px;
     overflow: hidden;
 }
-
-.product-card img {}
 
 .product-card h3 {
     font-size: 34px;
@@ -201,6 +207,12 @@ nav {
     margin: 0;
     padding: 25px;
     padding-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
 }
 
 .product-card h3 a {
@@ -215,6 +227,12 @@ nav {
     margin: 0;
     padding: 0 25px;
     font-family: muli, sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
 }
 
 .price {
@@ -262,6 +280,7 @@ nav {
     margin: 0;
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 .footer-menu ul li {
@@ -273,6 +292,10 @@ nav {
     color: #1B2437;
     font-size: 18px;
     padding: 3px;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: line-through;
 }
 
 .footer-logo {
@@ -335,8 +358,6 @@ nav {
     font-family: muli, sans-serif;
 }
 
-.footer-social-menu {}
-
 .footer-social-menu ul {
     margin: 0;
     list-style: none;
@@ -354,8 +375,6 @@ nav {
     padding: 3px;
 }
 
-
-.footer-social-menu ul li a i {}
 
 .owl-nav {
     margin: 0;
@@ -412,8 +431,6 @@ nav {
 .owl-dots .owl-dot.active span {
     background-color: #1B2437 !important;
 }
-
-.title {}
 
 .title h2 {
     margin-top: 0;
