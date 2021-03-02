@@ -4,13 +4,42 @@
     outline: 0;
     font-family: 'Playfair Display', serif;
 }
-html,body{
+
+html,
+body {
     background-color: #F6F6F6;
 }
 
+a,
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+strong,
+b,
+main,
+button,
+article,
+nav {
+    font-family: 'Playfair Display', serif;
+}
+
+
 .top-bar {}
 
-.site-logo {}
+.site-logo {
+    width: 150px;
+    margin: 10px 0;
+}
 
 .site-logo img {}
 
@@ -130,37 +159,95 @@ html,body{
 
 .popular-category h5 {}
 
-.item {}
+.category-slider {
+    margin: 40px 0;
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+}
 
-.category-item {}
+.category-item {
+    text-align: center;
+}
 
 .category-item a {}
 
 .category-item img {}
 
-.category-item h2 {}
+.category-item h2 {
+    color: #1B2437;
+    font-size: 20px;
+}
 
-.product-sec {}
+.product-sec {
+    margin-bottom: 40px;
+}
 
 .item {}
 
-.product-card {}
+.product-card {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
 
 .product-card img {}
 
-.product-card h3 {}
+.product-card h3 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 46px;
+    margin: 0;
+    padding: 25px;
+    padding-bottom: 10px;
+}
 
-.product-card h3 a {}
+.product-card h3 a {
+    color: #1B2437;
+}
 
-.product-card p {}
+.product-card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8E8E93;
+    margin: 0;
+    padding: 0 25px;
+    font-family: muli, sans-serif;
+}
 
-.price {}
+.price {
+    padding: 30px 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
 
-.price h5 {}
+.price h5 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
 
-.price h5 span {}
+.price h5 span {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 46px;
+    margin-left: 5px;
+}
 
-.price button {}
+.price button {
+    border: 2px solid #EDA3B5;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 0 25px;
+    color: #EDA3B5;
+    font-family: muli, sans-serif;
+    font-weight: 600;
+    outline: none;
+}
 
 .footer-sec {}
 
@@ -196,7 +283,7 @@ html,body{
 .footer-link ul {
     margin: 0;
     list-style: none;
-    
+
 }
 
 .footer-link ul li {
@@ -235,3 +322,100 @@ html,body{
 
 
 .footer-social-menu ul li a i {}
+
+.owl-nav {
+    margin: 0;
+}
+
+.category-carousel .owl-nav button {
+    font-size: 24px !important;
+    line-height: 1 !important;
+    height: 36px;
+    width: 36px;
+    border-radius: 8px !important;
+    position: absolute;
+    margin: 0 !important;
+    outline: none;
+}
+
+.category-carousel .owl-prev {
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+.category-carousel .owl-next {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.owl-dots .owl-dot {
+    height: 16px;
+    width: 16px;
+    margin: 3px;
+    position: relative;
+    border-radius: 50%;
+    outline: none;
+}
+
+.owl-dots .owl-dot.active {
+    border: 1px solid #1b243766 !important;
+}
+
+.owl-dots .owl-dot span {
+    margin: 0 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 8px !important;
+    width: 8px !important;
+    background-color: #1b243766 !important;
+}
+
+.owl-dots .owl-dot.active span {
+    background-color: #1B2437 !important;
+}
+
+.title {}
+
+.title h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 34px;
+    line-height: 46px;
+    color: #1B2437;
+    font-weight: 400;
+}
+
+.product-card-nav {
+    position: relative;
+}
+
+.product-card-nav button {
+    font-size: 24px !important;
+    line-height: 1 !important;
+    height: 36px;
+    width: 36px;
+    border-radius: 8px !important;
+    position: absolute;
+    margin: 0 !important;
+    outline: none;
+    border: none;
+    background-color: #FFFFFF;
+    color: #D1D1D6;
+}
+
+.product-card-nav .owl-prev {
+    top: 50%;
+    right: 60px;
+    transform: translate(0, -50%);
+}
+
+.product-card-nav .owl-next {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
