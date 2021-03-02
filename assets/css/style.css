@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    font-family: 'Playfair Display', serif;
 }
-
-
-
+html,body{
+    background-color: #F6F6F6;
+}
 
 .top-bar {}
 
@@ -15,29 +16,107 @@
 
 .header-icons {}
 
-.header-icons ul {}
+.header-icons ul {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
 
-.header-icons ul li {}
+.header-icons ul li {
+    display: inline-flex;
+    margin: 5px 15px;
 
-.header-icons ul li a {}
+}
+
+.header-icons ul li a {
+    color: #1B2437;
+    font-size: 18px;
+    padding: 3px;
+
+}
 
 .action-menu {}
 
-.action-menu ul {}
+.action-menu ul {
 
-.action-menu ul li {}
+    margin: 0;
+    list-style: none;
+    text-align: right;
 
-.action-menu ul li a {}
+}
+
+.action-menu ul li {
+    display: inline-flex;
+    margin: 5px 8px;
+}
+
+.action-menu ul li a {
+    color: #1B2437;
+    font-size: 20px;
+    padding: 3px;
+
+}
+
+.nav-item {
+    margin: 0 25px;
+}
+
+.nav-link {
+    color: #1B2437;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.nav-link.active {}
+
+
+.home-banner {
+    background-image: url(../image/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    padding: 150px 0;
+}
 
 .banner-content {}
 
-.banner-content h1 {}
+.banner-content h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+}
 
-.banner-content p {}
+.banner-content p {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
 
 .banner-content a {}
 
-.btn-theme {}
+.btn-theme {
+    background-color: transparent;
+    border-radius: 16px;
+    border: 2px solid #ffffff33;
+    color: #fff;
+    padding: 13px 20px;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: linear .2s;
+}
+
+.btn-theme:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #EDA3B5;
+    border-color: #EDA3B5;
+    transition: linear .2s;
+}
 
 .banner-img {}
 
@@ -87,11 +166,22 @@
 
 .footer-menu {}
 
-.footer-menu ul {}
+.footer-menu ul {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
 
-.footer-menu ul li {}
+.footer-menu ul li {
+    display: inline-flex;
+    margin: 5px 8px;
+}
 
-.footer-menu ul li a {}
+.footer-menu ul li a {
+    color: #1B2437;
+    font-size: 18px;
+    padding: 3px;
+}
 
 .footer-logo {}
 
@@ -103,11 +193,22 @@
 
 .footer-link h3 {}
 
-.footer-link ul {}
+.footer-link ul {
+    margin: 0;
+    list-style: none;
+    
+}
 
-.footer-link ul li {}
+.footer-link ul li {
+    display: inline-flex;
+    margin: 5px 8px;
+}
 
-.footer-link ul li a {}
+.footer-link ul li a {
+    color: #1B2437;
+    font-size: 18px;
+    padding: 3px;
+}
 
 .copyright {}
 
@@ -115,10 +216,22 @@
 
 .footer-social-menu {}
 
-.footer-social-menu ul {}
+.footer-social-menu ul {
+    margin: 0;
+    list-style: none;
+    text-align: right;
+}
 
-.footer-social-menu ul li {}
+.footer-social-menu ul li {
+    display: inline-flex;
+    margin: 5px 8px;
+}
 
-.footer-social-menu ul li a {}
+.footer-social-menu ul li a {
+    color: #1B2437;
+    font-size: 18px;
+    padding: 3px;
+}
+
 
 .footer-social-menu ul li a i {}
